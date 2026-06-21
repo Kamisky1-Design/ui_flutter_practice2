@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-
+import 'package:ui_flutter_practice2/refer_card.dart';
+import 'balance_card.dart';
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -47,6 +48,13 @@ class Homepage extends StatelessWidget {
               ),
             )
           ],
+      ),
+      body: ListView(
+        padding: EdgeInsets.all(20),
+        children: [
+        BalanceCard(),
+        ReferCard(),
+        ],
       ),
     );
   }
