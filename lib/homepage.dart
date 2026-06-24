@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'balance_card.dart';
 import 'refer_card.dart';
+import 'transfer_card.dart';
 class Homepage extends StatelessWidget {
   const Homepage({super.key});
 
@@ -14,7 +15,8 @@ class Homepage extends StatelessWidget {
             CircleAvatar(
               radius: 20,
               backgroundColor: Colors.white,
-              child: Icon(Icons.person, color: Colors.black, size: 30,),
+              child: Icon(Icons.person, 
+              color: Colors.black, size: 30,),
             ),
             SizedBox(width: 10,),
              Row(
@@ -53,8 +55,9 @@ class Homepage extends StatelessWidget {
         padding: EdgeInsets.all(20),
         children: [
         BalanceCard(),
-        SizedBox(height: 30,),
+        SizedBox(height: 25,),
         ReferCard(),
+        TransferCard(),
         ],
       ),
     );
